@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
@@ -8,223 +8,250 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-<body>
-    <!-- Header st -->
-    <header>
-        <nav class="">
-            <div class="grid grid-cols-2 border">
-                <div class="flex ml-10 p-4">
-                    <img class="h-12" src="assets/logo.png"/>
-                    <span class="anton-regular pl-1 text-green-700">
-                    Emergency <br>
-                    Service
-                    </span>
-                </div>
-                <div class="flex justify-end mr-10">
-                    <div class="flex p-6 bg-cyan-50">
-                        <span class="pr-1.5 pt-1.5">0 </span>
-                        <img class="h-5 mt-2" src="assets/heart.png"/>
-                    </div>
-                    <div class="flex p-6 bg-cyan-50">
-                        <span class="pr-1.5 pt-1.5">100 </span>
-                        <img class="h-5 mt-2" src="assets/coin.png" alt="" srcset="" />
-                    </div>
-                    <div class="p-6">
-                        <button class="bg-green-500 rounded-3xl pl-4 pr-4 pt-2 pb-2 text-white">0 Copy</button>
-                    </div>
-                </div>
+  <body>
+    <!-- Header st-->
+    <header class="">
+      <nav class="">
+        <div class="grid grid-cols-2 border">
+          <div class="flex ml-5 mt-3 mb-3 md:ml-10 md:p-4 md:mt-0">
+            <img class="h-8 mt-1 md:h-14" src="assets/logo.png"/>
+            <span class="anton-regular pl-1 text-sm text-green-700 md:text-2xl md:ml-1">Emergency <br>
+              Service</span>
+          </div>
+          <div class="flex justify-end md:mr-10">
+            <div class="flex pl-5 pr-5 md:p-6 md:mr-4 bg-cyan-50 rounded-4xl">
+              <button id="heart-count" class="pr-1 md:pr-1.5 md:pt-1.5 md:text-2xl">0</button>
+              <img class="h-4 mt-6 md:h-8 md:mt-4.5" src="assets/heart.png"/>
             </div>
-        </nav>
+            <div class="flex pl-5 pr-5 md:p-6 md:mr-4 bg-cyan-50 rounded-4xl">
+              <button id="token" class="pr-1 md:pr-1.5 md:pt-1.5 md:text-2xl">100</button>
+              <img class="h-4 mt-6 md:h-8 md:mt-4" src="assets/coin.png"/>
+            </div>
+            <div class=" mr-4 mt-3 md:p-6 md:mt-1 ">
+              <button
+                class="bg-green-500 rounded-2xl pl-2 pr-2 pb-1  mt-2 md:rounded-3xl md:pl-4 md:pr-4 md:pt-2 md:pb-2 text-white">
+                0 Copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Header ends -->
     <!-- Main starts here -->
     <main class="bg-blue-50">
         <!-- Main description and bio -->
-        <section>
-            <div class="bg-color grid place-items-center p-4 ">
-            <img class="h-18" src="assets/logo-dark.png"/>
-            <span class="text-white text-2xl font-bold mt-2 mb-2">জরুরী সেবা ডিরেক্টরি</span>
-            <span class="text-white">Goverment Emergency Service at Your Fingertip - A Project by Goverment of the People's Republic of Bangladesh</span>
+      <section>
+        <div class="bg-color grid place-items-center p-4 ">
+          <img class="h-18" src="assets/logo-dark.png"/>
+          <span class="text-white text-2xl font-bold mt-2 mb-2">জরুরী সেবা ডিরেক্টরি</span>
+          <span class="text-white text-center">Goverment Emergency Service at Your Fingertip - A Project by
+            Goverment of the People's Republic of Bangladesh</span>
+        </div>
+      </section>
+      <!-- All cards are created here -->
+      <section class="w-11/12 m-auto justify-center">
+        <div
+          class="container mt-5 mb-5 gap-4 place-items-center grid grid-cols-1 md:grid-cols-4">
+        
+          <!-- card one -->
+          <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/emergency.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
             </div>
-        </section>
-        <!-- All cards are created here -->
-        <section class="w-11/12 m-auto justify-center">
-            <div class="container mt-5 mb-5 gap-4 place-items-center grid grid-cols-1 md:grid-cols-4">
-                <!-- card one -->
-                <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                    <div class="flex justify-between">
-                        <img class="h-6" src="assets/emergency.png"/>
-                        <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                    </div>
-                    <div class="grid">
-                        <span class="mt-3 font-bold">জাতীয় জরুরী সেবা </span>
-                        <span class="">National Emergency Service</span>
-                        <span class="font-bold text-xl mt-2">999</span> 
-                    </div>
-                    <button class="new-color p-2 mt-2 rounded-2xl text-sm">সার্বজনীন</button>
-                    <div class="flex justify-center mt-4">
-                        <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                        <button  class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                    </div>
-                </div>
-            <!-- card Two -->
-            <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                <div class="flex justify-between">
-                    <img class="h-6" src="assets/police.png"/>
-                    <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                </div>
-                <div class="grid">
-                    <span class="mt-3 font-bold">পুলিশ</span>
-                    <span class="">Police</span>
-                    <span class="font-bold text-xl mt-2">999</span> 
-                </div>
-                <button class="new-color p-2 mt-2 rounded-2xl text-sm">পুলিশ</button>
-                <div class="flex justify-center mt-4">
-                    <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                    <button  class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">জাতীয় জরুরী সেবা </span>
+              <span class="call-allert">National Emergency Service</span>
+              <span class="contact font-bold text-xl mt-2">999</span>
             </div>
-            <!-- card three -->
-            <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                <div class="flex justify-between">
-                    <img class="h-6" src="assets/fire-service.png"/>
-                    <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                </div>
-                <div class="grid">
-                    <span class="mt-3 font-bold">ফায়ার সার্ভিস </span>
-                    <span class="">Fire Service</span>
-                    <span class="font-bold text-xl mt-2">999</span> 
-                </div>
-                <button class="new-color p-2 mt-2 rounded-2xl text-sm">ফায়ার</button>
-                <div class="flex justify-center mt-4">
-                    <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                    <button  class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">সার্বজনীন</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
             </div>
-            <!-- card four -->
-            <div class="card h-full w-full bg-white row-span-3 rounded-2xl shadow-md">
-                <div class="flex justify-between">
-                    <div class="m-3">
-                        <i class="fa-solid fa-clock"></i>
-                        <span>Call History</span>
-                    </div>
-                    <div class="m-2">
-                        <button class=" rounded-3xl pl-4 pr-4 pt-2 pb-2 text-sm hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800">Clear</button>
-                    </div>
-                </div>
-                <!-- History will be added dynamically here -->
-                <div class="">
-                    <span class="p-3" id="callHistory"></span>
-                </div>
+          </div>
+          <!-- card Two -->
+          <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/police.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">পুলিশ</span>
+              <span class="call-allert">Police</span>
+              <span class="contact font-bold text-xl mt-2">999</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">পুলিশ</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          <!-- card three -->
+          <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/fire-service.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">ফায়ার সার্ভিস </span>
+              <span class="call-allert">Fire Service</span>
+              <span class="contact font-bold text-xl mt-2">999</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">ফায়ার</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          <!-- card four -->
+          <div class="card h-full w-full bg-white row-span-3 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+                <div class="m-3">
+            <i class="fa-solid fa-clock"></i>
+            <span>Call History</span>
+            </div>
+            <div class="m-2">
+                <button id="clear-btn"
+                class=" rounded-3xl pl-4 pr-4 pt-2 pb-2 text-sm hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800">
+                Clear
+              </button>
+            </div>
+            </div>
+            <!-- History will be added dynamically here -->
+            <div id="call-history-container" class=" p-3"> 
+                         
+            </div>
             <!-- History will be added dynamically above -->
+          </div>
+          <!-- card five  -->
+          <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/ambulance.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
             </div>
-            <!-- card five  -->
-            <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                <div class="flex justify-between">
-                    <img class="h-6" src="assets/ambulance.png"/>
-                    <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                </div>
-                <div class="grid">
-                    <span class="mt-3 font-bold">এ্যাম্বুলেন্স </span>
-                    <span class="">Ambulance</span>
-                    <span class="font-bold text-xl mt-2">1943-999999</span> 
-                </div>
-                <button class="new-color p-2 mt-2 rounded-2xl text-sm">স্বাস্থ্য</button>
-                <div class="flex justify-center mt-4">
-                    <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                    <button  class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                    </div>
-                </div>
-                <!-- card six  -->
-                <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                    <div class="flex justify-between">
-                        <img class="h-6" src="assets/emergency.png"/>
-                        <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                    </div>
-                    <div class="grid">
-                        <span class="mt-3 font-bold">নারী ও শিশু সহায়তা </span>
-                        <span class="">Women and Child Support</span>
-                        <span class="font-bold text-xl mt-2">109</span> 
-                    </div>
-                    <button class="new-color p-2 mt-2 rounded-2xl text-sm">সহায়তা</button>
-                    <div class="flex justify-center mt-4">
-                        <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                        <button  class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                    </div>
-                </div>
-                <!-- card seven  -->
-                <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                    <div class="flex justify-between">
-                        <img class="h-6" src="assets/emergency.png"/>
-                        <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                    </div>
-                    <div class="grid">
-                        <span class="mt-3 font-bold">দুদক </span>
-                        <span class="">Anti-corruption</span>
-                        <span class="font-bold text-xl mt-2">106</span> 
-                    </div>
-                    <button class="new-color p-2 mt-2 rounded-2xl text-sm">সরকারী</button>
-                    <div class="flex justify-center mt-4">
-                        <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                        <button  class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                    </div>
-                </div>
-                <!-- card eight  -->
-                <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                    <div class="flex justify-between">
-                        <img class="h-6" src="assets/emergency.png"/>
-                        <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                    </div>
-                    <div class="grid">
-                        <span class="mt-3 font-bold">বিদ্যুৎ বিভ্রাট </span>
-                        <span class="">Electricity Outage</span>
-                        <span class="font-bold text-xl mt-2">16216</span> 
-                    </div>
-                    <button class="new-color p-2 mt-2 rounded-2xl text-sm">বিদ্যুৎ</button>
-                    <div class="flex justify-center mt-4">
-                        <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                        <button  class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                    </div>
-                </div>
-                <!-- card nine  -->
-                <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                    <div class="flex justify-between">
-                         <img class="h-6" src="assets/brac.png"/>
-                         <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                     </div>
-                    <div class="grid">
-                        <span class="mt-3 font-bold"> ব্র্যাক</span>
-                        <span class="">Brac</span>
-                        <span class="font-bold text-xl mt-2">16445</span> 
-                    </div>
-                    <button class="new-color p-2 mt-2 rounded-2xl text-sm">এনজিও</button>
-                    <div class="flex justify-center mt-4">
-                        <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                        <button  class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                    </div>
-                </div>
-                <!-- card ten  -->
-                <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
-                    <div class="flex justify-between">
-                        <img class="h-6" src="assets/Bangladesh-Railway.png"/>
-                        <i class="fa-regular fa-heart text-2xl hover:cursor-pointer"></i>
-                    </div>
-                    <div class="grid">
-                        <span class="mt-3 font-bold">বাংলাদেশ রেলওয়ে </span>
-                        <span class="">Bangladesh Railway</span>
-                        <span class="font-bold text-xl mt-2">163</span> 
-                    </div>
-                    <button class="new-color p-2 mt-2 rounded-2xl text-sm">পরিবহন</button>
-                    <div class="flex justify-center mt-4">
-                        <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
-                        <button class="pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
-                    </div>
-                </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">এ্যাম্বুলেন্স </span>
+              <span class="call-allert">Ambulance</span>
+              <span class="contact font-bold text-xl mt-2">1943-999999</span> 
             </div>
-        </section>
-    </main>
-</body>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">স্বাস্থ্য</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          <!-- card six  -->
+         <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/emergency.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">নারী ও শিশু সহায়তা </span>
+              <span class="call-allert">Women and Child Support</span>
+              <span class="contact font-bold text-xl mt-2">109</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">সহায়তা</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          <!-- card seven  -->
+          <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/emergency.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">দুদক </span>
+              <span class="call-allert">Anti-corruption</span>
+              <span class="contact font-bold text-xl mt-2">106</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">সরকারী</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          
+          <!-- card eight  -->
+          <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/emergency.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">বিদ্যুৎ বিভ্রাট </span>
+              <span class="call-allert">Electricity Outage</span>
+              <span class="contact font-bold text-xl mt-2">16216</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">বিদ্যুৎ</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          
+          <!-- card nine  -->
+          <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/brac.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold"> ব্র্যাক</span>
+              <span class="call-allert">Brac</span>
+              <span class="contact font-bold text-xl mt-2">16445</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">এনজিও</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          <!-- card ten  -->
+          <div class="card w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/Bangladesh-Railway.png"/>
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">বাংলাদেশ রেলওয়ে </span>
+              <span class="call-allert">Bangladesh Railway</span>
+              <span class="contact font-bold text-xl mt-2">163</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">পরিবহন</button>
+            <div class="flex justify-center mt-4">
+              <button class="mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+      </section>
+     
+    <script src="index.js"></script>
+  </body>
 </html>
