@@ -4,9 +4,12 @@ const callBtn = document.querySelectorAll(".call-btn");
 const Token = document.getElementById("token");
 const CallHistoryContainer = document.getElementById("call-history-container");
 const clearBtn = document.getElementById("clear-btn");
+const copyBtn = document.querySelectorAll(".copy-btn");
+const copyCount = document.getElementById("copy-count");
 // Heart Count
 let count = 0;
 let token = 100;
+let copyCounts = 0;
 heartBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     count++;
@@ -60,7 +63,22 @@ callBtn.forEach((call) => {
     }
   });
 });
-
+// Clearing the call history
 clearBtn.addEventListener("click", () => {
   CallHistoryContainer.innerHTML = "";
+});
+
+// Copy count
+
+copyBtn.forEach((copy) => {
+  copy.addEventListener("click", () => {
+    copyCounts++;
+    const newCard = copy.closest(".newCard");
+    const hotline = newCard.querySelector(".hotline");
+
+    const hotlineNumber = hotline.textContent;
+    copyCount.textContent = `${copyCounts} Copy`;
+    alert(`Hotline number has been copied: ` + hotlineNumber);
+    console.log(hotlineNumber);
+  });
 });
